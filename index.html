@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Basic Finnish Quiz</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:900|Raleway:400,500" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+<div id="start-page">
+<h1>Basic Finnish Quiz</h1>
+<button type='submit' class="start" id="start">Start</button>
+</div>
+
+<div class="quiz-container" id="quiz">
+
+	<div id="pagination"></div>
+
+<div id="question"></div>
+
+<div id="answer-container" class="answers">
+	<button type="submit" class="button" id="answerA" data-id="1"></button>
+	<button type="submit" class="button" id="answerB" data-id="2"></button>
+	<button type="submit" class="button" id="answerC" data-id="3"></button>
+	<button type="submit" class="button" id="answerD" data-id="4"></button>
+</div>
+
+
+
+	<button class="button next" id="next">Next</button>
+	<button class="button get-score" id="get-score">Submit</button>
+	<button class="button retake" id="retake" onclick="refreshPage()">Retake Quiz</button>
+	
+
+</div>
+
+<div id="results"></div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

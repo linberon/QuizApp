@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:900|Raleway:400,500);
+
+body{
+    padding: 20px;
+    background-color: #243854;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#start-page {
+  background: url(IMG_0043.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+
+h1{
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  font-size: 130px;
+  color: #ffffff;
+}
+
+.start {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  border: 0px;
+  padding: 80px;
+  border-radius: 50%;
+  background-color: #1a3a67e3;
+  opacity: 0.9;
+  color: #86c1fc;
+}
+
+.start:hover {
+  background-color: #183666;
+  opacity: 0,95;
+  cursor: pointer;
+}
+
+#question {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: #ffffff;
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    background-color: #efefef;
+    color: #243854;
+    border: 0px;
+    border-radius: 0px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: #d8d8d8;
+}
+
+.correct {
+  background-color: #06d87e !important;
+}
+
+.wrong {
+  background-color: #ff5770fc !important;
+}
+
+#answer-container {
+margin-right: auto;
+margin-left: auto;
+width: 800px;
+}
+
+.answers {
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+
+#answerA, #answerB, #answerC, #answerD{
+  padding: 5px;
+  text-align: center;
+  margin: 6px 3px 6px 3px;
+  height: 50px; 
+  width: 300px;
+  border-radius: 0px;
+}
+
+#next, #get-score, #retake{
+  background-color: #1e7aa5;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  border-radius: 0;
+  color: #e6e9ed;
+}
+
+#pagination{
+  margin-left: 0;
+  margin-right: 0;
+  color: #efefef;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
