@@ -43,6 +43,8 @@ var allQuestions = [
 }];
 
 var currentQuestion = 0;
+var score = 0;
+renderQuestion(allQuestions[currentQuestion]);
 
 function renderQuestion(oneQuestion){
   $('#question').html(oneQuestion.question);
@@ -53,7 +55,7 @@ function renderQuestion(oneQuestion){
 }
 
 function answerIsCorrect(oneQuestion, chosen) {
-   if (oneQuestion.correct == chosen){
+   if (oneQuestion.correct === chosen){
     return true;
    }
    else {
@@ -61,18 +63,18 @@ function answerIsCorrect(oneQuestion, chosen) {
   }
 }
 
-console.log(answerIsCorrect(allQuestions[currentQuestion], 1));
-console.log(answerIsCorrect(allQuestions[currentQuestion], 2));
+//console.log(answerIsCorrect(allQuestions[currentQuestion], 1));
+//console.log(answerIsCorrect(allQuestions[currentQuestion], 2));
 
-renderQuestion(allQuestions[currentQuestion]);
 
 
 function handleAnswerClick(button, chosen) {
   if (answerIsCorrect(allQuestions[currentQuestion], chosen)){
-    button.addClass('correct');
+    button.addClass("correct");
+    score++;
   }
   else {
-    button.addClass('wrong');
+    button.addClass("wrong");
   }
 }
 
@@ -86,8 +88,8 @@ $('#answerD').on('click',  function(){ handleAnswerClick($('#answerD'), 3) });
 
 function handleNextClick() {
   // clear correct button
-  $('.correct').removeClass('correct');
-  $('.wrong').removeClass('wrong');
+  $(".correct").removeClass("correct");
+  $(".wrong").removeClass("wrong");
   // set current question to next one
   currentQuestion++;
   renderQuestion(allQuestions[currentQuestion]);
@@ -119,11 +121,34 @@ function clickNext(){
 function getNext(){
   $('#next').hide();
   $('.answers .button').click(function(event){
-      $('#next').show();
+       if (currentQuestion < allQuestions.length - 1) {
+      $("#next").show();
+    } else {
+      $("#get-score").show();
+    }
 });                        
 }
 
 $(clickNext);
+
+
+//hide Submit and Retake Quiz until needed
+$('#get-score').hide();
+$('#retake').hide();
+
+
+// TODO: FIX the buttons! show them in new lines.
+$("#get-score").click(function(e) {
+  // TODO:
+   $('#quiz').hide();
+      $('#retake').removeClass('.hide').show();
+      $('#results').show();
+  //hide everything;
+  //show score.
+  return("Your score is " + score() + "/10"); 
+
+});
+
 
 
 //pagination
@@ -156,65 +181,6 @@ $('#next').click(function(){
 function refreshPage() {
     location.reload();
 }
-
-//hide Submit and Retake Quiz until needed
-$('#get-score').hide();
-$('#retake').hide();
-
-
-//need to define correct answer and last question 
-
-$('#answerA').attr('data-id', 1);
-$('#answerA').attr('data-id', question.correct);
-
-
-
-
-//score NOT WORKING YET
-/*var score = 0;
-
-function calculateScore() {
-  $('#results').text(score);
-
-  if(){
-  
-   $('#answerA, #answerB, #answerC, #answerD').click(function(event){
-     
-      score += 1;
-    
-    $('#results').text(score);
-  
-
-    });
-    //return("Your score is " + calculateScore() + "/10");  
-    }
-    else { 
-      score += 0;
-    }
-  }
-
-$(calculateScore);*/
-
-
-
-//Show submit button after last question, remove Next
-//NOT WORKING YET
-
-/*
-var lastQuestion = ;
-
-function showSubmit(){
-
-  if(allQuestions.length-1 == ){
-
-    $('.answers').click(function(event){
-      //$('#next .button').hide();
-  $('#get-score .button').removeClass('hide').show(); });
-  }
-};
-
-$(showSubmit);
-*/
 
 
 //need a function to show correct answer, when wrong clicked
