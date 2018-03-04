@@ -74,10 +74,16 @@ h1{
 
 .correct {
   background-color: #06d87e !important;
+  background: url("correct.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .wrong {
-  background-color: #ff5770fc !important;
+  background-color: #ff5770fc !important; 
+  background: url("wrong.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #answer-container {
@@ -101,20 +107,18 @@ width: 50%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 10px;
-  border-radius: 0;
+  border-radius: 0px;
   color: #e6e9ed;
 }
 
 #retake{
   background-color: #1e7aa5;
-  margin-top: 300px;
+  margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 10px;
   border-radius: 0;
   color: #e6e9ed;
 }
-
 
 #pagination{
   margin-left: 0;
@@ -125,13 +129,15 @@ width: 50%;
 }
 
 #results{
-  text-align: center;
-  margin-top: 80px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   color: #ffffff;
-  padding: 80px;
+  padding: 95px;
   border-radius: 50%;
-  background-color: #ff5770fc;
-  margin-top: 50px;
+  background-color: #9879fd;
+  width: 300px;
+  height: 300px;
 }

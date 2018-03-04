@@ -1,6 +1,6 @@
 
 var allQuestions = [
-/*{
+{
   question: "Which one is not a colour?",
   options: ["valkoinen", "harmaa", "ruskea", "vaalean"],
   correct: 3
@@ -36,7 +36,7 @@ var allQuestions = [
   question: "How would you finish the sentence? \"Saisinko kahvia ja ___.\"",
   options: ["kaksi pullaa", "kolme palaa", "kiitos paljon", "paljon onnea"],
   correct: 0
-},*/ {
+}, {
   question: "Think about vowel harmony now! Which suffix is incorrect?",
   options: ["Helsingissä", "kadullä", "työpaikasta", "päivällä"],
   correct: 1
@@ -62,10 +62,6 @@ function answerIsCorrect(oneQuestion, chosen) {
     return false;
   }
 }
-
-//console.log(answerIsCorrect(allQuestions[currentQuestion], 1));
-//console.log(answerIsCorrect(allQuestions[currentQuestion], 2));
-
 
 
 function handleAnswerClick(button, chosen) {
@@ -138,16 +134,10 @@ $('#retake').hide();
 $('#results').hide();
 
 
-// TODO: FIX the buttons! show them in new lines.
 $("#get-score").click(function(e) {
-  // TODO:
    $('#quiz').hide();
       $('#retake').removeClass('.hide').show();
-      $('#results').show();
-  //hide everything;
-  //show score.
-  return("Your score is " + score() + "/10"); 
-
+      $('#results').show().text("Your score is " + score + "/10");
 });
 
 
