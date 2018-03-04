@@ -1,6 +1,6 @@
 
 var allQuestions = [
-{
+/*{
   question: "Which one is not a colour?",
   options: ["valkoinen", "harmaa", "ruskea", "vaalean"],
   correct: 3
@@ -36,7 +36,7 @@ var allQuestions = [
   question: "How would you finish the sentence? \"Saisinko kahvia ja ___.\"",
   options: ["kaksi pullaa", "kolme palaa", "kiitos paljon", "paljon onnea"],
   correct: 0
-}, {
+},*/ {
   question: "Think about vowel harmony now! Which suffix is incorrect?",
   options: ["Helsingissä", "kadullä", "työpaikasta", "päivällä"],
   correct: 1
@@ -135,6 +135,7 @@ $(clickNext);
 //hide Submit and Retake Quiz until needed
 $('#get-score').hide();
 $('#retake').hide();
+$('#results').hide();
 
 
 // TODO: FIX the buttons! show them in new lines.

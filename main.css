@@ -83,25 +83,19 @@ h1{
 #answer-container {
 margin-right: auto;
 margin-left: auto;
-width: 800px;
+width: 50%;
 }
-
-.answers {
-  margin-left: auto;
-  margin-right: auto;  
-}
-
 
 #answerA, #answerB, #answerC, #answerD{
   padding: 5px;
-  text-align: center;
-  margin: 6px 3px 6px 3px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   height: 50px; 
   width: 300px;
   border-radius: 0px;
 }
 
-#next, #get-score, #retake{
+#next, #get-score{
   background-color: #1e7aa5;
   margin-top: 70px;
   margin-right: auto;
@@ -111,6 +105,17 @@ width: 800px;
   color: #e6e9ed;
 }
 
+#retake{
+  background-color: #1e7aa5;
+  margin-top: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  border-radius: 0;
+  color: #e6e9ed;
+}
+
+
 #pagination{
   margin-left: 0;
   margin-right: 0;
@@ -119,3 +124,14 @@ width: 800px;
   margin-top: 40px;
 }
 
+#results{
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 80px;
+  border-radius: 50%;
+  background-color: #ff5770fc;
+  margin-top: 50px;
+}
