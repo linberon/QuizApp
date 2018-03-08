@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Muli:900|Raleway:400,500);
 
-body{
-    padding: 20px;
-    background-color: #243854;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
+body {
+  padding: 20px;
+  background-color: #243854;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
 #start-page {
@@ -18,9 +18,8 @@ body{
   top: 0;
 }
 
-
-h1{
-  font-family: 'Muli', sans-serif;
+h1 {
+  font-family: "Muli", sans-serif;
   font-weight: 900;
   margin-right: auto;
   margin-left: auto;
@@ -31,7 +30,7 @@ h1{
 }
 
 .start {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 30px;
   border: 0px;
@@ -44,12 +43,12 @@ h1{
 
 .start:hover {
   background-color: #183666;
-  opacity: 0,95;
+  opacity: 0, 95;
   cursor: pointer;
 }
 
 #question {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 30px;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -57,19 +56,19 @@ h1{
 }
 
 .button {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    background-color: #efefef;
-    color: #243854;
-    border: 0px;
-    border-radius: 0px;
-    padding: 20px;
-    cursor: pointer;
-    margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  background-color: #efefef;
+  color: #243854;
+  border: 0px;
+  border-radius: 0px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .button:hover {
-    background-color: #d8d8d8;
+  background-color: #d8d8d8;
 }
 
 .correct {
@@ -80,7 +79,7 @@ h1{
 }
 
 .wrong {
-  background-color: #ff5770fc !important; 
+  background-color: #ff5770fc !important;
   background: url("wrong.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -93,21 +92,22 @@ h1{
 }
 
 #answer-container {
-margin-right: auto;
-margin-left: auto;
-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
 }
 
-#answerA, #answerB, #answerC, #answerD{
+.answer {
   padding: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
-  height: 50px; 
-  width: 300px;
+  height: 50px;
+  width: 100%;
   border-radius: 0px;
 }
 
-#next, #get-score{
+#next,
+#get-score {
   background-color: #1e7aa5;
   margin-top: 70px;
   margin-right: auto;
@@ -117,7 +117,7 @@ width: 50%;
   color: #e6e9ed;
 }
 
-#retake{
+#retake {
   background-color: #1e7aa5;
   margin-top: 100px;
   margin-right: auto;
@@ -126,7 +126,7 @@ width: 50%;
   color: #e6e9ed;
 }
 
-#pagination{
+#pagination {
   margin-left: 0;
   margin-right: 0;
   color: #efefef;
@@ -134,11 +134,11 @@ width: 50%;
   margin-top: 40px;
 }
 
-#results{
+#results {
   margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 30px;
   color: #ffffff;
   padding: 95px;

@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>Basic Finnish Quiz</title>
-	
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Muli:900|Raleway:400,500" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Muli:900|Raleway:400,500" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="grid.css">
 	<link rel="stylesheet" href="main.css">
 
@@ -14,37 +14,37 @@
 <body>
 
 	<div id="start-page">
-		<h1>Basic Finnish Quiz</h1>	
+		<h1>Basic Finnish Quiz</h1>
 		<button type='submit' class="start" id="start">Start</button>
 	</div>
 
 <main role="main">
-	
+
 <div class="quiz-container" id="quiz">
 
 	<div id="pagination"></div>
 
 <div id="question"></div>
-	
+
 <div id="answer-container" class="answers">
 
 	<div class="row">
 		<div class="col-6">
-			<button type="submit" class="button" id="answerA"></button>
-		</div>
-			
-		<div class="col-6">
-			<button type="submit" class="button" id="answerB"></button>
-		</div>
-	</div>
-			
-	<div class="row">
-		<div class="col-6">		
-			<button type="submit" class="button" id="answerC"></button>
+			<button type="submit" class="button answer" data-index="0" id="answer-0"></button>
 		</div>
 
-		<div class="col-6">	
-			<button type="submit" class="button" id="answerD"></button>
+		<div class="col-6">
+			<button type="submit" class="button answer" data-index="1" id="answer-1"></button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6">
+			<button type="submit" class="button answer" data-index="2" id="answer-2"></button>
+		</div>
+
+		<div class="col-6">
+			<button type="submit" class="button answer" data-index="3" id="answer-3"></button>
 		</div>
 	</div>
 </div>
@@ -52,7 +52,7 @@
 
 	<button class="button next" id="next">Next</button>
 	<button class="button get-score" id="get-score">Submit</button>
-	
+
 
 </div>
 
