@@ -86,6 +86,12 @@ h1{
   background-repeat: no-repeat;
 }
 
+.solution {
+  background: url("correct.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 #answer-container {
 margin-right: auto;
 margin-left: auto;

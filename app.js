@@ -71,6 +71,7 @@ function handleAnswerClick(button, chosen) {
   }
   else {
     button.addClass("wrong");
+    (oneQuestion.correct).button.addClass("solution");
   }
 }
 
