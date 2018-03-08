@@ -13,18 +13,23 @@
 
 <body>
 
-	<div id="start-page">
-		<h1>Basic Finnish Quiz</h1>
-		<button type='submit' class="start" id="start">Start</button>
+<div class="row">
+	<div class="col-12">
+		<div id="start-page">
+			<h1>Basic Finnish Quiz</h1>
+			<button type='submit' class="start" id="start">Start</button>
+		</div>
+	
+
+		<main role="main">
+
+		<div class="quiz-container" id="quiz">
+
+		<div id="pagination"></div>
+
+		<div id="question"></div>
 	</div>
-
-<main role="main">
-
-<div class="quiz-container" id="quiz">
-
-	<div id="pagination"></div>
-
-<div id="question"></div>
+</div>
 
 <div id="answer-container" class="answers">
 
@@ -50,15 +55,21 @@
 </div>
 
 
-	<button class="button next" id="next">Next</button>
-	<button class="button get-score" id="get-score">Submit</button>
-
+<div class="row">
+	<div class="col-12">		
+		<button class="button next" id="next">Next</button>
+		<button class="button get-score" id="get-score">Submit</button>
+	</div>
+</div>
 
 </div>
 
-<div id="results"></div>
-<button class="button retake" id="retake" onclick="refreshPage()">Retake Quiz</button>
-
+<div class="row">
+	<div class="col-12">
+		<div id="results"></div>
+		<button class="button retake" id="retake" onclick="refreshPage()">Retake Quiz</button>
+	</div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="app.js"></script>

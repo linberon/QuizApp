@@ -139,6 +139,9 @@ $("#results").hide();
 
 $("#get-score").click(function(e) {
   $("#quiz").hide();
+  $("#get-score").hide();
+  $(".answer").hide();
+
   $("#retake")
     .removeClass(".hide")
     .show();
@@ -175,5 +178,3 @@ $("#next").click(function() {
 function refreshPage() {
   location.reload();
 }
-
-//need a function to show correct answer, when wrong clicked

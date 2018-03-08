@@ -23,18 +23,18 @@ h1 {
   font-weight: 900;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 120px;
+  margin-top: 18vh;
   margin-bottom: 80px;
-  font-size: 130px;
+  font-size: 10vw;
   color: #ffffff;
 }
 
 .start {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
   border: 0px;
-  padding: 80px;
+  padding: 70px;
   border-radius: 50%;
   background-color: #1a3a67e3;
   opacity: 0.9;
@@ -85,24 +85,21 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.solution {
-  background: url("correct.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
 
 #answer-container {
   margin-right: auto;
   margin-left: auto;
-  width: 50%;
+  width: 75%;
+  height: 100%;
 }
 
 .answer {
-  padding: 5px;
+  padding: 10px;
   margin-top: 6px;
   margin-bottom: 6px;
-  height: 50px;
+  height: 100%;
   width: 100%;
+  word-wrap: break-word;
   border-radius: 0px;
 }
 
@@ -135,15 +132,15 @@ h1 {
 }
 
 #results {
-  margin-top: 100px;
+  margin-top: 15vh;
   margin-right: auto;
   margin-left: auto;
   font-family: "Raleway", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   color: #ffffff;
-  padding: 95px;
+  padding: 80px;
   border-radius: 50%;
   background-color: #9879fd;
-  width: 300px;
-  height: 300px;
+  max-width: 240px;
+  max-height: 240px;
 }
